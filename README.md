@@ -28,4 +28,28 @@ Output:
       Monkey has Intestines with 31991 bits.
       Monkey: I am never harmed!
 */
+public class Tree
+    {
+        public Monkey m;
+        public Tree() {
+            m = new Monkey();
+        }
+    }
+    public class Monkey
+    {
+        public string verb = "I am alive and well!";
+        public void DemonstrateLiving() {
+            Console.WriteLine("Monkey: " + verb);
+        }
+    }
+    public class Intestines
+    {
+        public short bits = 3;
+    }
+    public class SuperIntestines : Intestines
+    {
+        public SuperIntestines() {
+            base.bits = 31991;
+        }
+    }
 ```
