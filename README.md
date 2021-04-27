@@ -1,6 +1,6 @@
 # MonkeyBalls
 How can you trust a hash function or the cold ConditionalWeakTables of a compiler?
-![:(](http://github.com/3yggy/MonkeyBalls/balls.ico)
+![:(](http://raw.githubusercontent.com/3yggy/MonkeyBalls/main/balls.ico)
 
 ```cs
 //Example
