@@ -3,20 +3,20 @@ How can you trust a hash function or the cold ConditionalWeakTables of a compile
 ```cs
 //Example
 Tree tree = new Tree();
-            tree.m.DemonstrateLiving();
-            Console.WriteLine("Setting Value ...");
-            tree.m = MB.SetMonkeyPoop(tree.m, new Intestines());
-            tree.m.verb = "I feel well with Intestines!";
-            tree.m.DemonstrateLiving();
-            Console.WriteLine($"Monkey has Intestines with {MB.GetMonkeyPoop<Intestines>(tree.m).bits} bits.");
-            Console.WriteLine("Setting Value ...");
-            MB.SetMonkeyPoop(tree, "m", new SuperIntestines());
-            tree.m.verb = "I feel well with SuperIntestines!";
-            tree.m.DemonstrateLiving();
-            Console.WriteLine($"Monkey has Intestines with {MB.GetMonkeyPoop<Intestines>(tree.m).bits} bits.");
-            tree.m.verb = "I am never harmed!";
-            tree.m.DemonstrateLiving();
-            Console.ReadKey();
+tree.m.DemonstrateLiving();
+Console.WriteLine("Setting Value ...");
+tree.m = MB.SetMonkeyPoop(tree.m, new Intestines());
+tree.m.verb = "I feel well with Intestines!";
+tree.m.DemonstrateLiving();
+Console.WriteLine($"Monkey has Intestines with {MB.GetMonkeyPoop<Intestines>(tree.m).bits} bits.");
+Console.WriteLine("Setting Value ...");
+MB.SetMonkeyPoop(tree, "m", new SuperIntestines());
+tree.m.verb = "I feel well with SuperIntestines!";
+tree.m.DemonstrateLiving();
+Console.WriteLine($"Monkey has Intestines with {MB.GetMonkeyPoop<Intestines>(tree.m).bits} bits.");
+tree.m.verb = "I am never harmed!";
+tree.m.DemonstrateLiving();
+Console.ReadKey();
 /* 
 Output:
       Monkey: I am alive and well!
