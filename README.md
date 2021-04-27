@@ -1,5 +1,7 @@
 # MonkeyBalls
 How can you trust a hash function or the cold ConditionalWeakTables of a compiler?
+![:(](http://github.com/3yggy/MonkeyBalls/balls.ico)
+
 ```cs
 //Example
 Tree tree = new Tree();
