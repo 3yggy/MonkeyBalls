@@ -1,6 +1,6 @@
 # MonkeyBalls
 How can you trust a hash function or the cold ConditionalWeakTables of a compiler?
-```
+```cs
 //Example
 Tree tree = new Tree();
             tree.m.DemonstrateLiving();
