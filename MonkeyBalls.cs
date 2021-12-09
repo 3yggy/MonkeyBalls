@@ -6,7 +6,7 @@ namespace MonkeyBalls
 {
     public static class MB
     {
-        const string monkeyPoop = "_MonkeyPoop_";
+        const string monkeyTail = "_MonkeyTail_";
 
         /// <summary>Sets the value of the object contained in the generated monkey ball and sets the field containing the monkey ball.</summary>
         /// <param name="owner">The object containing the field containing the monkey ball.</param>
@@ -25,7 +25,7 @@ namespace MonkeyBalls
             if(!(host is ImAMonkeyBall)) {
                 AttachMonkeyBall(ref host);
             }
-            FieldInfo f = host.GetType().GetField(monkeyPoop, BindingFlags.Public | BindingFlags.Instance);
+            FieldInfo f = host.GetType().GetField(monkeyTail, BindingFlags.Public | BindingFlags.Instance);
             f.SetValue(host, val);
             return host;
         }
@@ -38,7 +38,7 @@ namespace MonkeyBalls
             if(!(host is ImAMonkeyBall)) {
                 return default(T);
             }
-            return (T)hostType.GetField(monkeyPoop, BindingFlags.Public | BindingFlags.Instance).GetValue(host);
+            return (T)hostType.GetField(monkeyTail, BindingFlags.Public | BindingFlags.Instance).GetValue(host);
         }
         private static void AttachMonkeyBall<T>(ref T host) {
             Type hostType = host.GetType();
@@ -53,7 +53,7 @@ namespace MonkeyBalls
                 | TypeAttributes.BeforeFieldInit,
                 hostType,new Type[]{typeof(ImAMonkeyBall)});
             typeBuilder.DefineField(
-                    monkeyPoop,
+                    monkeyTail,
                     typeof(object),
                     FieldAttributes.Public);
             Type monkeyType = typeBuilder.CreateType();
